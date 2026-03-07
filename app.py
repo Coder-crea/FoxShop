@@ -1,11 +1,8 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
-from h2.utilities import utf8_encode_headers
+
 from supabase import create_client
 from datetime import datetime
-import bcrypt
-import jwt
-from functools import wraps
 
 from config import Config
 from auth import hash_password, validate_password, generate_tokens, verify_token, token_required

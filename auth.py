@@ -2,7 +2,7 @@ import bcrypt
 import jwt
 from datetime import datetime, timedelta
 from functools import wraps
-from flask import request, jsonify, make_response
+from flask import request, jsonify
 from config import Config
 
 
