@@ -15,4 +15,4 @@ class Config:
     JWT_REFRESH_TOKEN_EXPIRES = 30 * 24 * 60 * 60  # 30 дней
 
     # CORS
-    FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:3000')
+    FRONTEND_URL = os.getenv('FRONTEND_URL')
